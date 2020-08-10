@@ -135,12 +135,29 @@ h1{
     animation: flip-horizontal-bottom 0.4s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
 }
 
+/* Skip to content class for screen readers. */
+.skip-to-content-link {
+  background: #333333;
+  height: 30px;
+  left: 50%;
+  padding: 8px;
+  position: absolute;
+  transform: translateY(-1000%);
+  transition: transform 0.3s;
+}
+
+/* Skip to content while focused: Brings it into focus for screen-reader or keyboard users. */
+.skip-to-content-link:focus {
+  transform: translateY(0%);
+}
+
 /* ----------------------------------------------
     MEDIA QUERIES
    ----------------------------------------------
 */
 
-@media (max-width:800px){
+/* The first breakpoint that needs to be adjusted is the iPad Pro layout. Adjusted it to work better with the iPad. */
+@media (max-width:1024px){
     .cta{
         width:90%;
         height:35vh;
@@ -150,7 +167,7 @@ h1{
     }
 
     .links{
-        width:50%;
+        width:38%;
     }
 
     .item{
@@ -158,6 +175,16 @@ h1{
     }
 }
 
+/* The second breakpoint is the 800px breakpoint, making the nav bar work better.*/
+@media (max-width:800px){
+
+    .links{
+        width:50%;
+    }
+
+}
+
+/* The final breakpoint is the 500px breakpoint for phones. */
 @media(max-width:500px){
 
     .menu{
