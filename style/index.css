@@ -128,9 +128,9 @@ h1{
 }
 
 .nav_link:hover{
-    background-color:#e4f9f5;
-    border-color: #e4f9f5;
-    color: #333333;
+    background-color:#cc3879;
+    border-color: #cc3879;
+    color: white;
     -webkit-animation: flip-horizontal-bottom 0.4s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
     animation: flip-horizontal-bottom 0.4s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
 }
