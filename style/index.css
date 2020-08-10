@@ -31,7 +31,7 @@ h1,h2{
     align-items: center;
     align-content: center;
     justify-content: space-between;
-    /* border-bottom: 1px solid #38ccb733; */
+    
 }
 
 .links{
@@ -53,7 +53,8 @@ h1,h2{
 .name{
     font-size: 2.2rem;
     color:#38ccb7;
-    margin: .5% 1.5%;
+    text-align: center;
+    margin:1%;
 }
 
 .selected{
@@ -66,7 +67,6 @@ h1,h2{
 }
 
 .hero{
-    
     display: flex;
     justify-content: center;
 }
@@ -110,9 +110,7 @@ h1{
 }
 
 .item img{
-    margin-bottom:1%
-    max-width:100%;
-    max-height:100%;
+    margin-bottom:1%;
     width:auto;
 }
 
@@ -126,6 +124,7 @@ h1{
     background: #333333;
     display: flex;
     justify-content: center;
+    
 }
 
 .nav_link:hover{
@@ -134,6 +133,69 @@ h1{
     color: #333333;
     -webkit-animation: flip-horizontal-bottom 0.4s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
     animation: flip-horizontal-bottom 0.4s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+}
+
+/* ----------------------------------------------
+    MEDIA QUERIES
+   ----------------------------------------------
+*/
+
+@media (max-width:800px){
+    .cta{
+        width:90%;
+        height:35vh;
+        background-position: bottom;
+        background-attachment: scroll;
+        
+    }
+
+    .links{
+        width:50%;
+    }
+
+    .item{
+        width:45%;
+    }
+}
+
+@media(max-width:500px){
+
+    .menu{
+        flex-direction: column;
+    }
+
+    .item img{
+        object-fit: cover;
+        height:175px;
+    }
+
+    .grid{
+        justify-content: space-evenly;
+    }
+
+    h1{
+        font-size:3.5rem;
+    }
+
+    .item{
+        width:45%;
+        /* margin: 0 3%; */
+    }
+
+    .name{
+        margin: 2% 0;
+    }
+
+    .links{
+        flex-direction: column;
+        text-align: center;
+        width: 25%;
+        margin-bottom: 4%;
+    }
+
+    .footer{
+        padding:1.5%;
+    }
 }
 
 /* KEY FRAMES */
