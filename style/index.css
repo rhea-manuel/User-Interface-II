@@ -11,6 +11,11 @@ a{
     text-decoration: none;
     color:#38ccb7;
     font-size: 1rem;
+    transition: .25s;
+}
+
+a:hover{
+    color: #cc3879;
 }
 
 body{
